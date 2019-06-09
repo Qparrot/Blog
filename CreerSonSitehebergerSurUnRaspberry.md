@@ -59,6 +59,10 @@ upgrade && update
 **Article - Installer Nginx Raspbian, et accelerez votre serveur web raspberry:** https://raspbian-france.fr/installer-nginx-raspbian-raspberry/
 **Article - Nginx failed to start a high performance web server and a reverse proxy server:** https://stackoverflow.com/questions/51525710/nginx-failed-to-start-a-high-performance-web-server-and-a-reverse-proxy-server
 **Article - Can't start Nginx - Job for nginx.service failed:** https://stackoverflow.com/questions/51525710/nginx-failed-to-start-a-high-performance-web-server-and-a-reverse-proxy-server
+**Thread - Script called in crontab every hour keeps sending emails at pi@raspberrypi:** https://raspberrypi.stackexchange.com/questions/71368/script-called-in-crontab-every-hour-keeps-sending-emails-at-piraspberrypi
+**Github - Script send a email and shutdown the pi if too high temperature:** https://gist.github.com/LeonardoGentile/7a5330e6bc55860feee5d0dd79e7965d
+**Article - Access your raspberry Pi from anywhere:** https://pavelfatin.com/access-your-raspberry-pi-from-anywhere/
+
 
 
 
