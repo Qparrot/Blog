@@ -25,7 +25,9 @@ upgrade && update
 
 ## installer php
 
+Installer nginx et no need to have password just use the sudo /etc/www/html restart
 
+the wordpress folder is directly on the /etc/var/www/ folder
 
 #### Useful Link
 
@@ -62,7 +64,12 @@ upgrade && update
 **Thread - Script called in crontab every hour keeps sending emails at pi@raspberrypi:** https://raspberrypi.stackexchange.com/questions/71368/script-called-in-crontab-every-hour-keeps-sending-emails-at-piraspberrypi
 **Github - Script send a email and shutdown the pi if too high temperature:** https://gist.github.com/LeonardoGentile/7a5330e6bc55860feee5d0dd79e7965d
 **Article - Access your raspberry Pi from anywhere:** https://pavelfatin.com/access-your-raspberry-pi-from-anywhere/
-
-
+**Hosting WordPress on Raspberry Pi Part 3 – (Right) Setup WordPress:** https://www.e-tinkers.com/2016/11/hosting-wordpress-on-raspberry-pi-part-3-setup-wordpress/
+**Change the password of the nginx server:** https://www.digitalocean.com/community/tutorials/how-to-set-up-basic-http-authentication-with-nginx-on-ubuntu-14-04
+**Thread - Why does nginx starts process as root? (I forget to sudo):** https://unix.stackexchange.com/questions/134301/why-does-nginx-starts-process-as-root
+**Article - Raspberry Pi Changing Default User Password and Creating Additional Accounts:** https://www.theurbanpenguin.com/raspberry-pi-changing-the-default-users-password-and-creating-addtional-accounts/
+**Article - Tutorial – Install WordPress on a Raspberry Pi using Nginx:** https://www.stewright.me/2014/06/tutorial-install-wordpress-on-a-raspberry-pi-using-nginx/
+**Article - Tutorial – Install Nginx and PHP on Raspbian:** https://www.stewright.me/2014/06/tutorial-install-nginx-and-php-on-raspbian/
+**Article - How To Set Up Password Authentication with Nginx on Ubuntu 14.04:** https://www.digitalocean.com/community/tutorials/how-to-set-up-password-authentication-with-nginx-on-ubuntu-14-04
 
 
