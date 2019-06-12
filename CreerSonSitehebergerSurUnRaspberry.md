@@ -1,5 +1,14 @@
 # Creer son site avec un raspberry
 
+## Difficulties
+
+Je ne comprends pas comment acceder au site wordpress depuis internet. Dans le reseau interne ca marche mais en externe j'y ai acces.
+J'ai compris que le sous domaine raspberry.quentinparrot.ovh me permet d'avoir acces au raspberry pi et non au site wordpress(ref.1).
+Je ne sais pas si le script de changement de l4ip dynamique marche(ref. 2).
+J'ai perdu le mdp de la database mysql, donc j'ai installe zsh(ref.3) pour utiliser l'autocompletion des commande precedente(snas succes: old bash). 
+How to reset the password de mysql (ref. 4)
+how to reset la database de wordpress(ref.5)
+Je ne sais pas comment aller sur mon site depuis internet ...(ref. 6)
 ## hebergement chez OVH
 
 ## acheter le raspberry
@@ -28,6 +37,7 @@ upgrade && update
 Installer nginx et no need to have password just use the sudo /etc/www/html restart
 
 the wordpress folder is directly on the /etc/var/www/ folder
+
 
 #### Useful Link
 
@@ -71,5 +81,20 @@ the wordpress folder is directly on the /etc/var/www/ folder
 **Article - Tutorial – Install WordPress on a Raspberry Pi using Nginx:** https://www.stewright.me/2014/06/tutorial-install-wordpress-on-a-raspberry-pi-using-nginx/
 **Article - Tutorial – Install Nginx and PHP on Raspbian:** https://www.stewright.me/2014/06/tutorial-install-nginx-and-php-on-raspbian/
 **Article - How To Set Up Password Authentication with Nginx on Ubuntu 14.04:** https://www.digitalocean.com/community/tutorials/how-to-set-up-password-authentication-with-nginx-on-ubuntu-14-04
+**Article - Avantages de l’auto-hébergement (ref. 1):** https://serveuramoi.ovh/
+**Article - DynHost OVH pour raspberry pi ou une machine linux(ref.2):** https://yann.me/dynhost-ovh-pour-raspberry-pi-ou-une-machine-linux/
+**Article - RaspberryPi dyndns OVH(ref.2):**https://www.ccaillat.fr/2016/06/raspberrypi-dyndns-ovh/?doing_wp_cron=1560361192.5327041149139404296875
+**Article - How to Install ZSH Shell on Ubuntu 18.04 LTS (ref.3):** https://linuxhint.com/install_zsh_shell_ubuntu_1804/
+**Article - Reset a MySQL root password(ref.4):** https://support.rackspace.com/how-to/mysql-resetting-a-lost-mysql-root-password/
+**Article - How to Delete a MySQL Database (ref.5):** https://www.wikihow.com/Delete-a-MySQL-Database
+**Thread - Problème site web - Raspberry Pi - OVH(ref.6):** http://community.ovh.com/t/probleme-site-web-raspberry-pi-ovh/16137
+**Article - Accéder de l’extérieur au flux http d’un Raspberry Pi(ref.6):** https://knowledge.parcours-performance.com/acceder-de-lexterieur-flux-http-dun-raspberry-pi/
+**Website - info IP:** https://www.whatismyip.com/fr/
+**Wiki -Moving WordPress (ref.6):** https://wordpress.org/support/article/moving-wordpress/
+**Article - Mettre en ligne votre serveur web Raspbian, rendre votre Raspberry Pi accessible depuis internet avec DynDNS et le port forwarding (ref.6):** https://raspbian-france.fr/mettre-en-ligne-serveur-web-raspbian-dydns-port-forwarding/
+**Article - Site web auto heberge (ref. 6):** https://artheodoc.wordpress.com/site-web-auto-heberge-sur-un-raspberry-pi/
+**Article - What’s the Difference Between “WordPress Address” and “Site Address”?(ref. 6):** https://www.wordher.com/whats-difference-wordpress-address-site-address/
+**Tuto - serveur web a la maison(ref.6):** https://raspberry-pi.developpez.com/cours-tutoriels/serveur-web/
+**Article - tips for .htaccess:** https://www.ionos.fr/digitalguide/hebergement/aspects-techniques/les-meilleures-astuces-htaccess/
 
 
