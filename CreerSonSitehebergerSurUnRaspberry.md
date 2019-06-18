@@ -43,15 +43,28 @@ Virtual host a voir plus tard:
 	- VirtualHost et nom de domaines sur un VPS OVH (ref. 22.1).
 	- Apache Rewrite or Proxy to internal server(ref. 22.2).
 	
-**CHECK THIS**  Wordpress redirect to subdomain configuration:
+
+	
+	
+18.05.2019: ca marche enfin...
+Je n'ai que changer l''url' et 'home' dans le file 'wp_config.php' pour les faire matcher avec 'raspberry.quentinparrot.ovh': est ce du a une sync avec le serveur de ovh?
+
+**follow up** Je dois installer le ssl.
+	- why to install ssl et comment l'intaller avec nginx (ref. 24.1).
+	- Comment installer un ssl avec LetsEncrypt ddns est cloudflare( je dois le bypass pour je ne sais quelle raison...) a voir a la maison car je dois d'abord activer le port 443 (ref. 24.2).
+	- Comment installer un ssl avec apache raspberry, a voir absolument. Malheureusement le browser ne va pas aimer car le httpS n'est pas enregistrer par une boite certifiee(24.3).
+	- Explication de outil certbot. il permet d'automatiser la generation de certificats tls/ssl avec letsencrypt. ca se fait avec apache(ref. 24.4).
+	https://www.youtube.com/watch?v=IjL3D9km3II
+ 
+
+**see later**  Wordpress redirect to subdomain configuration:
 	- DDNS: Accessing your Raspberry Pi from Internet(ref. 23.1)
 	- DynHost per FritzBox aktualisieren(ref. 23.2)
 	-  [Tuto] Pour les Nuls : Accès externe en https(ref.23.3)
 	- Apache:Redirecting from subdomain to Wordpess page URL Path [closed](ref.23.4)
-	
-	
 
 Pour plus tard je peux voir comment utiliser plusieur subdomain point to different local ip adress (ref. 20)
+	
 ## hebergement chez OVH
 
 ## acheter le raspberry
@@ -180,5 +193,11 @@ the wordpress folder is directly on the /etc/var/www/ folder
 **Thread - Apache:Redirecting from subdomain to Wordpess page URL Path [closed](ref. 23.4):**https://superuser.com/questions/1179190/apacheredirecting-from-subdomain-to-wordpess-page-url-path
 
 **Thread - How to make subdomains point to different local IP addresses? (ref. 20):** https://askubuntu.com/questions/172937/how-to-make-subdomains-point-to-different-local-ip-addresses
+**Article - Hosting WordPress on Raspberry Pi Part 6 – Implement SSL (ref.24.1):** https://www.e-tinkers.com/2016/12/hosting-wordpress-on-raspberry-pi-part-6-implement-ssl/
+**Article - Raspberry Pi SSL Certificates using Let’s Encrypt (ref. 24.2):** https://pimylifeup.com/raspberry-pi-ssl-lets-encrypt/
+**Article - How to Enable HTTPS on the Raspberry Pi Apache Web Server (ref. 24.3):** https://variax.wordpress.com/2017/03/18/adding-https-to-the-raspberry-pi-apache-web-server/comment-page-1/
+**Article - Certbot: challenge DNS OVH & wildcard(ref. 24.4):** Certbot: challenge DNS OVH & wildcard
+
+https://www.youtube.com/watch?v=IjL3D9km3II
 
 
