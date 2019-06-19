@@ -55,7 +55,39 @@ Je n'ai que changer l''url' et 'home' dans le file 'wp_config.php' pour les fair
 	- Comment installer un ssl avec apache raspberry, a voir absolument. Malheureusement le browser ne va pas aimer car le httpS n'est pas enregistrer par une boite certifiee(24.3).
 	- Explication de outil certbot. il permet d'automatiser la generation de certificats tls/ssl avec letsencrypt. ca se fait avec apache(ref. 24.4).
 	https://www.youtube.com/watch?v=IjL3D9km3II
- 
+ 	- Explication supplementaire (ref. 24.6).
+	Le tuto qui marche pour le ssl: Créer et installer un certificat SSL Let’s Encrypt pour Apache (ref. 24.5)
+	Voici la commande a faire pour installer les certificat sur le raspberry.
+sudo ./certbot-auto certonly --webroot --webroot-path /var/www/html/ --domain raspberry.quentinparrot.ovh --email parrot.quentin@gmail.com
+	Si il y a un pb de 
+		"Certbot has problem setting up the virtual environment.
+		We were not be able to guess the right solution from your pip
+output.
+
+Consult https://certbot.eff.org/docs/install.html#problems-with-python-virtual-environment
+for possible solutions.
+You may also find some support resources at https://certbot.eff.org/support/"
+
+	La solution est de faire la commande: "sudo rm -rf /etc/pip.conf" (ref. 24.7)
+
+	- Si il y a ce message d'erreur: "Certbot-auto, letsencrypt-auto has insecure permissions"
+	Il faut rm les folders /eff.org et "/vc"(ref. 24.8).
+	- Si vous avez ce message d'erreur "Invalid Command ‘Header’, Perhaps Misspelled or Defined by a Module Not Included in The Server Configuration"
+
+		When working with the headers in Apache 2 directly, it’s possible to run into this error when you do not have mod_headers enabled. It’s a simple fix: you just need to make sure you enable mod_headers in your configuration.
+		You can take a shortcut using a2enmod, a command that enables the module for you automatically:
+		$ sudo a2enmod headers
+		Enabling module headers.
+		 Run '/etc/init.d/apache2 restart' to activate new configuration!
+		$ sudo service apache2 restart
+		 * Restarting web server apache2
+		Upon trying the requested page again, you should now be able to use headers within your configuration. (ref. 24.9)
+	- si vous avez ce message "" AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 127.0.0.1. Set the 'ServerName' directive globally to suppress this message c'est harmless.(ref. 24.10).
+ sudo apachectl configtest                
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 127.0.1.53. Set the 'ServerName' directive globally to suppress this message
+Syntax OK
+
+Mon dieu le SSL marche!!!
 
 **see later**  Wordpress redirect to subdomain configuration:
 	- DDNS: Accessing your Raspberry Pi from Internet(ref. 23.1)
@@ -197,7 +229,12 @@ the wordpress folder is directly on the /etc/var/www/ folder
 **Article - Raspberry Pi SSL Certificates using Let’s Encrypt (ref. 24.2):** https://pimylifeup.com/raspberry-pi-ssl-lets-encrypt/
 **Article - How to Enable HTTPS on the Raspberry Pi Apache Web Server (ref. 24.3):** https://variax.wordpress.com/2017/03/18/adding-https-to-the-raspberry-pi-apache-web-server/comment-page-1/
 **Article - Certbot: challenge DNS OVH & wildcard(ref. 24.4):** Certbot: challenge DNS OVH & wildcard
-
+**Article - Créer et installer un certificat SSL Let’s Encrypt pour Apache (ref. 24.5):** https://www.memoinfo.fr/tutoriels-linux/configurer-lets-encrypt-apache/
+**Article - Ubuntu 18.04 LTS – Installation de certificats SSL/TLS avec Certbot (Let’s Encrypt) (ref. 24.6):** https://howto.wared.fr/ubuntu-certificats-ssl-tls-certbot/
+**Thread - (ref. 24.7)- https Certbot has problem setting up the virtual environment [Résolu]:** https://www.jeedom.com/forum/viewtopic.php?t=44493
+**Thread - Certbot-auto, letsencrypt-auto has insecure permissions (ref. 24.8):**https://community.letsencrypt.org/t/certbot-auto-letsencrypt-auto-has-insecure-permissions/93046/3
+**Article - Invalid Command ‘Header’, Perhaps Misspelled or Defined by a Module Not Included in The Server Configuration(ref.24.9):** https://zaclee.net/apache/errors-apache/invalid-command-header
 https://www.youtube.com/watch?v=IjL3D9km3II
+**Article - https://www.nilovelez.com/2016/03/apache-virtual-hosts-ubuntu-14(ref. 24.10):** https://www.nilovelez.com/2016/03/apache-virtual-hosts-ubuntu-14/
 
 
