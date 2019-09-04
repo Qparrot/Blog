@@ -861,15 +861,20 @@ Je n'ai que changer l''url' et 'home' dans le file 'wp_config.php' pour les fair
 - 28.08.2019: 
 	- Je n'arrive pas à faire marcher mon site avec le sous domaine www. et celui de nom frere. Je reformate la SD
 - 29.08.2019:
-	- La SD n'a plus de Kernel et je n'arrive pas a recréé les partition.
+	- La SD n'a plus de Kernel et je n'arrive pas a recréé les partitions.
 - 01.08.2019:
-	- La SD remarche sans que je comprenne vraiment... Je l'ai plug unplug...
+	- La SD fonctionne à nouveau sans que je comprenne vraiment... Je l'ai plug unplug...
 - 02.08.2019:
 	- Je viens de refaire les tutoriaux et reconnecter la PI a internet avec un ssh ready avec un lien sur l'internet mondial :)
 - 03.08.2019:
 	- Installation et tuto de l'ip local fixe pour la raspberry.
 	- Installation et verification + tuto pour apache, php et mysql.
-	 
+- 04.08.2019:
+	- installation du site
+	- installation du ssl
+	- installation multi site
+	- installation ssl pour le second site.
+
 #### Useful Link
 
 1. **Auto heberger son site avec OVH:** https://www.p3ter.fr/gestion-du-dyndns-sous-linux-avec-ovh.html
