@@ -775,6 +775,11 @@ sudo service apache2 restart
 Normalement tout marche bien! Bravo!
 https://www.memoinfo.fr/tutoriels-linux/configurer-lets-encrypt-apache/
 
+Pour pouvoir changer de theme vous allez devoir faire les commandes suivantes:
+
+`sudo chown -R www-data:www-data /var/www/quentinparrot.com/html`
+`sudo -Rf 770 /var/www/quentinparrot.com/html`
+
 **follow up** Je dois installer le ssl.
 
 	- Comment installer un ssl avec LetsEncrypt ddns est cloudflare( je dois le bypass pour je ne sais quelle raison...) a voir a la maison car je dois d'abord activer le port 443 (ref. 24.2).
@@ -874,6 +879,8 @@ Je n'ai que changer l''url' et 'home' dans le file 'wp_config.php' pour les fair
 	- installation du ssl
 	- installation multi site
 	- installation ssl pour le second site.
+- 06.08.2019: "FTP credentials error corrected"
+	- WordPress Connection Information (FTP credentials - Kali) error corrected
 
 #### Useful Link
 
